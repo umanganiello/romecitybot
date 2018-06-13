@@ -1,5 +1,5 @@
 # romecitybot
-Serverless OpenWhisk backend for a Telegram bot interacting with Rome public transport APIs
+Serverless OpenWhisk backend for a Telegram bot interacting with Rome public transport APIs using IBM Cloud technologies.
 
 ## Authors
  
