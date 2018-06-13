@@ -1,0 +1,7 @@
+{
+  "host": "muovi.roma.it",
+  "port": 80,
+  "authPath": "/ws/xml/autenticazione/1",
+  "authMethodName": "autenticazione.Accedi",
+  "language": "it"
+}

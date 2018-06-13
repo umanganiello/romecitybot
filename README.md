@@ -1,2 +1,2 @@
 # romecitybot
-Serverless backend for Rome public transport Telegram bot
+Serverless OpenWhisk backend for a Telegram bot interacting with Rome public transport APIs

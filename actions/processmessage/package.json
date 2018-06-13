@@ -1,0 +1,19 @@
+{
+  "name": "processmessage",
+  "version": "1.0.0",
+  "description": "Basic Whisk action processing incoming Telegram messages",
+  "main": "processMessage.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umanganiello/romecitybot.git"
+  },
+  "author": "Umberto Manganiello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umanganiello/romecitybot/issues"
+  },
+  "homepage": "https://github.com/umanganiello/romecitybot#readme",
+  "dependencies": {
+    "xmlrpc": "^1.3.2"
+  }
+}
