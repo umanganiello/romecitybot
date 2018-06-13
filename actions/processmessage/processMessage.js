@@ -9,13 +9,13 @@ function main(params) {
 
     return new Promise(function(resolve, reject) {
         client.methodCall(params.authMethodName, [params.user_token, ''], function (error, authToken) {
-            if(error){
+            if(error || !authToken){
                 reject(error);
             }
             else{
                 client = xmlrpc.createClient({ host: params.host, port: params.port, path: params.calledMethodPath});
                 client.methodCall(params.calledMethodName, [authToken, params.inputValue, params.language], function (error, value) {
-                    if(error){
+                    if(error || !value){
                         reject(error);
                     }
                     else{
