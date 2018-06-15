@@ -19,7 +19,7 @@ function main(params) {
             .send({"chat_id": chatId, "text": text})
             .end(function (response) {
                 if(response && response.statusCode && response.statusCode == 200){
-                    resolve({msg: "[ECHO] Response: \n" + response.body});
+                    resolve({msg: "[ECHO] Response: \n" + JSON.stringify(response.body)});
                 }
                 else{
                     reject(response);
