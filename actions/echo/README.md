@@ -16,5 +16,4 @@ You can check if the installation has been successfully completed doing the foll
  * run ```npm test```
 
 ## Parameters
- * Configuration params - see [params.json](params.json)
  * *botToken* - Telegram Bot token used to send the message 
