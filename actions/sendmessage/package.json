@@ -1,0 +1,24 @@
+{
+  "name": "sendmessage",
+  "version": "1.0.0",
+  "description": "Basic Whisk action sending Telegram messages",
+  "main": "sendMessage.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umanganiello/romecitybot.git"
+  },
+  "author": "Umberto Manganiello",
+  "scripts": {
+    "build": "zip -r sendmessage.zip . -x README.md -x test.js",
+    "test": "mocha"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umanganiello/romecitybot/issues"
+  },
+  "homepage": "https://github.com/umanganiello/romecitybot#readme",
+  "dependencies": {
+    "mocha": "^5.2.0",
+    "unirest": "^0.5.1"
+  }
+}
