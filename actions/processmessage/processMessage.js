@@ -1,6 +1,6 @@
 /**
   *
-  * This action contains the basic structure for a generic API async call
+  * This action contains the basic structure for a generic API async call.
   *
   */
 function main(params) {
@@ -19,7 +19,11 @@ function main(params) {
                         reject(error);
                     }
                     else{
-                        resolve({msg: value});
+                        //Extract the response for the user from the returned value
+                        var response = {};
+                        response.message = JSON.stringify(value.risposta); //Propagate the API response to the next action
+                        response.chatId = params.chatId; //Propagate the original chat id to the next action
+                        resolve(response);
                     }
                 });
             }

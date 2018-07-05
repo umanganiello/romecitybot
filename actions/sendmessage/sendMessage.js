@@ -7,21 +7,18 @@
   */
 function main(params) {
     var unirest = require('unirest');
-    var chatId = params.chatId;
-    var text = params.chatText;
-    var botToken = params.botToken;         //Set when creating the action
-    var url = 'https://api.telegram.org/bot' + botToken + '/sendMessage';
+    var url = 'https://api.telegram.org/bot' + params.botToken + '/sendMessage';
 
     return new Promise(function(resolve, reject) {
         unirest.post(url)
             .headers({'Accept': 'application/json', 'Content-Type': 'application/json'})
-            .send({"chat_id": chatId, "text": text})
+            .send({"chat_id": params.chatId, "text": params.message})
             .end(function (response) {
                 if(response && response.statusCode && response.statusCode == 200){
-                    resolve({msg: "[sendmessage] Response: \n" + JSON.stringify(response.body)});
+                    resolve({msg: "[sendmessage OK] ChatId= " + params.chatId + ", message=" + params.message});
                 }
                 else{
-                    reject(response);
+                    reject("[sendmessage KO]: \n ERROR: \n " + response + "\n\n PARAMS: \n" + JSON.stringify(params));
                 }
             });
     });

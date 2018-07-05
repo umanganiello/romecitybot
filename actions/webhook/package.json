@@ -1,15 +1,15 @@
 {
-  "name": "processmessage",
+  "name": "webhook",
   "version": "1.0.0",
-  "description": "Whisk action processing user's intent when interacting with the Bot",
-  "main": "processMessage.js",
+  "description": "Whisk action acting as Webhook for incoming Telegram messages",
+  "main": "webhook.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/umanganiello/romecitybot.git"
   },
   "author": "Umberto Manganiello",
   "scripts": {
-    "build": "zip -r processmessage.zip . -x params.json -x README.md -x test.js",
+    "build": "zip -r webhook.zip . -x README.md -x test.js",
     "test": "mocha"
   },
   "license": "ISC",
@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/umanganiello/romecitybot#readme",
   "dependencies": {
-    "mocha": "^5.2.0",
-    "xmlrpc": "^1.3.2"
+    "mocha": "^5.2.0"
   }
 }
