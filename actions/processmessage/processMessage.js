@@ -20,8 +20,11 @@ function main(params) {
                     }
                     else{
                         //Extract the response for the user from the returned value
-                        var response = {};
-                        response.message = JSON.stringify(value.risposta); //Propagate the API response to the next action
+                        var response = {message: "Tempi di attesa per fermata " + params.inputValue+"\n"};
+                        value.risposta.arrivi.forEach(function(arrival) {
+                            response.message += arrival.linea + ": " + arrival.tempo_attesa + "min\n";
+                        });
+                        response.message += (value.risposta.arrivi.length == 0) ? "Nessun autobus" : "";
                         response.chatId = params.chatId; //Propagate the original chat id to the next action
                         resolve(response);
                     }

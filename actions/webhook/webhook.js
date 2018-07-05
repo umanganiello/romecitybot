@@ -13,7 +13,8 @@ function main(params) {
 
     /*TODO: Interact with Watson Assistant in order to understand which API must be called and what are the input values.*/
     var callParams = {};
-    callParams.calledMethodName = "paline.PalinaLinee";
+    callParams.calledMethodName = "paline.Previsioni";
+    //callParams.calledMethodName = "paline.PalinaLinee";
     callParams.calledMethodPath = "/ws/xml/paline/7";
     callParams.inputValue = text;
     callParams.chatId = chatId;
