@@ -1,4 +1,4 @@
-# processmessage
+# webhook
 This OpenWhisk action acts as Webhook for incoming Telegram messages.
 
 It interacts with Watson Assistant to understand the user's intent and returns the params needed to call the external API. Those params are passed to the following action in the sequence.

@@ -1,4 +1,4 @@
-# processmessage
+# sendmessage
 This OpenWhisk action sends a message to a Telegram chat using the romecitybot.
 
 ## Installing
