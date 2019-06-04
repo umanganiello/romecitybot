@@ -19,6 +19,6 @@
   "homepage": "https://github.com/umanganiello/romecitybot#readme",
   "dependencies": {
     "mocha": "^5.2.0",
-    "unirest": "^0.5.1"
+    "unirest": "^0.6.0"
   }
 }
