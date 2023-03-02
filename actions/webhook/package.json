@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/umanganiello/romecitybot#readme",
   "dependencies": {
-    "mocha": "^5.2.0"
+    "mocha": "^10.2.0"
   }
 }
